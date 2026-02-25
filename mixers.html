@@ -23,6 +23,72 @@
         table { width: 100%; border-collapse: collapse; margin: 16px 0; }
         th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; font-size: 14px; }
         th { background: #f0f0f0; }
+
+        /* Карточки товаров */
+        .product-card {
+            border: 1px solid #ddd;
+            background: #fff;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card .card-img {
+            background: #e8e8e8;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            color: #888;
+            font-size: 13px;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-card .card-body {
+            padding: 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .product-card .card-subtitle {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+        .product-card .card-specs {
+            font-size: 13px;
+            line-height: 1.7;
+            flex: 1;
+        }
+        .product-card .card-specs span {
+            color: #666;
+        }
+        .product-card .card-cta {
+            display: block;
+            text-align: center;
+            border: 2px solid #333;
+            padding: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        .product-card .card-cta:hover {
+            background: #333;
+            color: #fff;
+        }
+        .card-group-title {
+            font-size: 16px;
+            color: #444;
+            margin: 24px 0 8px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #ddd;
+        }
     </style>
 </head>
 <body>
@@ -67,7 +133,7 @@
     <h1 style="font-size: 32px;">Промышленные бетоносмесители CO-NELE</h1>
 
     <p style="font-size: 18px; margin: 16px 0;">
-        Планетарные и двухвальные модели от 50 до 4000 литров.
+        Планетарные и двухвальные модели от 50 до 4500 литров.
         Для производства товарного бетона, ЖБИ, UHPC, огнеупоров и сухих смесей.
         Поставка напрямую с завода, гарантия 24 месяца.
     </p>
@@ -89,7 +155,7 @@
     <div style="display: flex; gap: 30px; flex-wrap: wrap;">
         <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 26px;">Планетарные бетоносмесители</h3>
-            <p><strong>Серия CMP — от 50 до 3000 литров</strong></p>
+            <p><strong>Серия CMP — 15 моделей от 50 до 4500 литров</strong></p>
 
             <h4 style="margin-top: 16px;">Принцип работы</h4>
             <p>
@@ -143,94 +209,259 @@
     </div>
 
     <h4 style="margin-top: 24px;">Модельный ряд планетарных смесителей</h4>
+    <p style="margin-bottom: 8px;">Серия CMP — 15 моделей от 50 до 4500 литров. Выберите подходящую модель или <a href="#cta">запросите подбор у инженера</a>.</p>
 
-    <table>
-        <tr>
-            <th>Модель</th>
-            <th>Объём выгрузки, л</th>
-            <th>Объём загрузки, л</th>
-            <th>Мощность, кВт</th>
-            <th>Назначение</th>
-        </tr>
-        <tr>
-            <td>CMP50</td>
-            <td>50</td>
-            <td>75</td>
-            <td class="note">[уточнить]</td>
-            <td>Лабораторный</td>
-        </tr>
-        <tr>
-            <td>CMP100</td>
-            <td>100</td>
-            <td>150</td>
-            <td class="note">[уточнить]</td>
-            <td>Лабораторный</td>
-        </tr>
-        <tr>
-            <td>CMP150</td>
-            <td>150</td>
-            <td>225</td>
-            <td class="note">[уточнить]</td>
-            <td>Малые производства</td>
-        </tr>
-        <tr>
-            <td>CMP250</td>
-            <td>250</td>
-            <td>375</td>
-            <td class="note">[уточнить]</td>
-            <td>Малые производства</td>
-        </tr>
-        <tr>
-            <td>CMP330</td>
-            <td>330</td>
-            <td>500</td>
-            <td class="note">[уточнить]</td>
-            <td>Средние производства</td>
-        </tr>
-        <tr>
-            <td>CMP500</td>
-            <td>500</td>
-            <td>750</td>
-            <td class="note">[уточнить]</td>
-            <td>Средние производства</td>
-        </tr>
-        <tr>
-            <td>CMP750</td>
-            <td>750</td>
-            <td>1125</td>
-            <td class="note">[уточнить]</td>
-            <td>Крупные производства</td>
-        </tr>
-        <tr>
-            <td>CMP1000</td>
-            <td>1000</td>
-            <td>1500</td>
-            <td class="note">[уточнить]</td>
-            <td>Крупные производства</td>
-        </tr>
-        <tr>
-            <td>CMP1500</td>
-            <td>1500</td>
-            <td>2250</td>
-            <td class="note">[уточнить]</td>
-            <td>Промышленные линии</td>
-        </tr>
-        <tr>
-            <td>CMP2000</td>
-            <td>2000</td>
-            <td>3000</td>
-            <td class="note">[уточнить]</td>
-            <td>Промышленные линии</td>
-        </tr>
-        <tr>
-            <td>CMP3000</td>
-            <td>3000</td>
-            <td>4500</td>
-            <td class="note">[уточнить]</td>
-            <td>Промышленные линии</td>
-        </tr>
-    </table>
-    <p class="note">* Точные характеристики мощности уточняются при подборе под конкретные задачи</p>
+    <!-- Лабораторные модели -->
+    <h5 class="card-group-title">Лабораторные модели</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CMP50]</div>
+            <div class="card-body">
+                <div class="card-title">CMP50</div>
+                <div class="card-subtitle">Лабораторный планетарный смеситель</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 50 л<br>
+                    <span>Загрузка:</span> 75 л<br>
+                    <span>Мощность:</span> 3 кВт<br>
+                    <span>Масса:</span> 700 кг<br>
+                    <span>Габариты:</span> 950 × 786 × 1200 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CMP100]</div>
+            <div class="card-body">
+                <div class="card-title">CMP100</div>
+                <div class="card-subtitle">Лабораторный планетарный смеситель</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 100 л<br>
+                    <span>Загрузка:</span> 150 л<br>
+                    <span>Мощность:</span> 5,5 кВт<br>
+                    <span>Масса:</span> 1 300 кг<br>
+                    <span>Габариты:</span> 1664 × 1453 × 1447 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Малые производства -->
+    <h5 class="card-group-title">Малые производства</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CMP150]</div>
+            <div class="card-body">
+                <div class="card-title">CMP150</div>
+                <div class="card-subtitle">Для малых производств и опытных линий</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 150 л<br>
+                    <span>Загрузка:</span> 225 л<br>
+                    <span>Мощность:</span> 7,5 кВт<br>
+                    <span>Масса:</span> 1 450 кг<br>
+                    <span>Габариты:</span> 1664 × 1453 × 1617 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CMP250]</div>
+            <div class="card-body">
+                <div class="card-title">CMP250</div>
+                <div class="card-subtitle">Для малых производств ЖБИ и сухих смесей</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 250 л<br>
+                    <span>Загрузка:</span> 375 л<br>
+                    <span>Мощность:</span> 11 кВт<br>
+                    <span>Масса:</span> 1 600 кг<br>
+                    <span>Габариты:</span> 1856 × 1648 × 1772 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CMP330]</div>
+            <div class="card-body">
+                <div class="card-title">CMP330</div>
+                <div class="card-subtitle">Для производства огнеупоров и UHPC</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 330 л<br>
+                    <span>Загрузка:</span> 500 л<br>
+                    <span>Мощность:</span> 15 кВт<br>
+                    <span>Масса:</span> 1 700 кг<br>
+                    <span>Габариты:</span> 1862 × 1850 × 1870 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Средние производства -->
+    <h5 class="card-group-title">Средние производства</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CMP500]</div>
+            <div class="card-body">
+                <div class="card-title">CMP500</div>
+                <div class="card-subtitle">Универсальный для средних предприятий</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 500 л<br>
+                    <span>Загрузка:</span> 750 л<br>
+                    <span>Мощность:</span> 18,5 кВт<br>
+                    <span>Масса:</span> 2 400 кг<br>
+                    <span>Габариты:</span> 2220 × 2071 × 1895 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CMP750]</div>
+            <div class="card-body">
+                <div class="card-title">CMP750</div>
+                <div class="card-subtitle">Для серийного производства ЖБИ</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 750 л<br>
+                    <span>Загрузка:</span> 1 125 л<br>
+                    <span>Мощность:</span> 30 кВт<br>
+                    <span>Масса:</span> 3 900 кг<br>
+                    <span>Габариты:</span> 2581 × 2336 × 2195 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Крупные производства -->
+    <h5 class="card-group-title">Крупные производства</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CMP1000]</div>
+            <div class="card-body">
+                <div class="card-title">CMP1000</div>
+                <div class="card-subtitle">Для крупных заводов ЖБИ и бетона</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 1 000 л<br>
+                    <span>Загрузка:</span> 1 500 л<br>
+                    <span>Мощность:</span> 37 кВт<br>
+                    <span>Масса:</span> 6 230 кг<br>
+                    <span>Габариты:</span> 2891 × 2602 × 2217 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CMP1250]</div>
+            <div class="card-body">
+                <div class="card-title">CMP1250</div>
+                <div class="card-subtitle">Для промышленного производства</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 1 250 л<br>
+                    <span>Загрузка:</span> 1 875 л<br>
+                    <span>Мощность:</span> 45 кВт<br>
+                    <span>Масса:</span> 7 000 кг<br>
+                    <span>Габариты:</span> 3058 × 2756 × 2305 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CMP1500]</div>
+            <div class="card-body">
+                <div class="card-title">CMP1500</div>
+                <div class="card-subtitle">Высокая производительность — до 65 м³/ч</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 1 500 л<br>
+                    <span>Загрузка:</span> 2 250 л<br>
+                    <span>Мощность:</span> 55 кВт<br>
+                    <span>Масса:</span> 8 000 кг<br>
+                    <span>Габариты:</span> 3223 × 2902 × 2425 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Промышленные линии -->
+    <h5 class="card-group-title">Промышленные линии</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CMP2000]</div>
+            <div class="card-body">
+                <div class="card-title">CMP2000</div>
+                <div class="card-subtitle">Для крупнотоннажного производства</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 2 000 л<br>
+                    <span>Загрузка:</span> 3 000 л<br>
+                    <span>Мощность:</span> 75 кВт<br>
+                    <span>Масса:</span> 9 535 кг<br>
+                    <span>Габариты:</span> 3625 × 3230 × 2630 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CMP2500]</div>
+            <div class="card-body">
+                <div class="card-title">CMP2500</div>
+                <div class="card-subtitle">Для промышленных бетонных заводов</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 2 500 л<br>
+                    <span>Загрузка:</span> 3 750 л<br>
+                    <span>Мощность:</span> 90 кВт<br>
+                    <span>Масса:</span> 10 500 кг<br>
+                    <span>Габариты:</span> 3893 × 3550 × 2695 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CMP3000]</div>
+            <div class="card-body">
+                <div class="card-title">CMP3000</div>
+                <div class="card-subtitle">Для масштабного производства бетона</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 3 000 л<br>
+                    <span>Загрузка:</span> 4 500 л<br>
+                    <span>Мощность:</span> 110 кВт<br>
+                    <span>Масса:</span> 11 000 кг<br>
+                    <span>Габариты:</span> 3893 × 3550 × 2975 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CMP4000]</div>
+            <div class="card-body">
+                <div class="card-title">CMP4000</div>
+                <div class="card-subtitle">Максимальный объём для тяжёлых бетонов</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 4 000 л<br>
+                    <span>Загрузка:</span> 6 000 л<br>
+                    <span>Мощность:</span> 160 кВт<br>
+                    <span>Масса:</span> 16 000 кг<br>
+                    <span>Габариты:</span> 4594 × 4150 × 3249 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CMP4500]</div>
+            <div class="card-body">
+                <div class="card-title">CMP4500</div>
+                <div class="card-subtitle">Флагман серии — крупнейший планетарный</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 4 500 л<br>
+                    <span>Загрузка:</span> 6 750 л<br>
+                    <span>Мощность:</span> 200 кВт<br>
+                    <span>Масса:</span> 18 000 кг<br>
+                    <span>Габариты:</span> 4594 × 4150 × 3399 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="note" style="margin-top: 16px;">* Все модели оснащены запатентованным редуктором CO-NELE, бронёй из чугуна Ni-Hard (18 мм, &gt;653 HB), автоматической системой смазки. Гарантия 24 месяца / 15 000 моточасов.</p>
 
     <div style="text-align: center; margin-top: 16px;">
         <a href="#cta" class="cta">Запросить КП на планетарный смеситель</a>
@@ -374,7 +605,7 @@
         </tr>
         <tr>
             <td><strong>Объём</strong></td>
-            <td>50 – 3 000 л</td>
+            <td>50 – 4 500 л</td>
             <td>750 – 4 000 л</td>
         </tr>
         <tr>
