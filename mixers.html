@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бетоносмесители CO-NELE — планетарные и двухвальные | Каталог моделей</title>
+    <title>Смесители CO-NELE — двухвальные, планетарные, интенсивные, сухих смесей, непрерывного действия, асфальтосмесители | Каталог</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: system-ui, sans-serif; line-height: 1.6; color: #222; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
@@ -89,6 +89,42 @@
             padding-bottom: 6px;
             border-bottom: 2px solid #ddd;
         }
+
+        /* Табы навигации по категориям */
+        .tab-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            border-bottom: 3px solid #333;
+            margin-bottom: 0;
+        }
+        .tab-btn {
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #555;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+        }
+        .tab-btn:hover {
+            background: #e0e0e0;
+            color: #222;
+        }
+        .tab-btn.active {
+            background: #333;
+            color: #fff;
+            border-color: #333;
+        }
+        .tab-panel {
+            display: none;
+        }
+        .tab-panel.active {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -130,18 +166,32 @@
 
     <p class="note">[Фоновое изображение: линейка смесителей CO-NELE]</p>
 
-    <h1 style="font-size: 32px;">Промышленные бетоносмесители CO-NELE</h1>
+    <h1 style="font-size: 32px;">Промышленные смесители CO-NELE</h1>
 
     <p style="font-size: 18px; margin: 16px 0;">
-        Планетарные и двухвальные модели от 50 до 4500 литров.
-        Для производства товарного бетона, ЖБИ, UHPC, огнеупоров и сухих смесей.
+        Полная линейка смесительного оборудования: двухвальные и планетарные бетоносмесители,
+        интенсивные смесители, смесители сухих смесей, непрерывного действия и асфальтосмесители.
         Поставка напрямую с завода, гарантия 24 месяца.
     </p>
 
     <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-        <a href="#planetary" class="cta">Планетарные смесители</a>
-        <a href="#twin-shaft" class="cta">Двухвальные смесители</a>
         <a href="#cta" class="cta">Помочь выбрать</a>
+    </div>
+</section>
+
+
+<!-- ============================================================ -->
+<!-- НАВИГАЦИЯ ПО КАТЕГОРИЯМ -->
+<!-- ============================================================ -->
+<section id="products" style="padding-bottom: 0;">
+    <h2>Каталог смесителей — 6 категорий</h2>
+    <div class="tab-nav">
+        <button class="tab-btn active" onclick="switchTab('twin-shaft')">Двухвальные</button>
+        <button class="tab-btn" onclick="switchTab('planetary')">Планетарные</button>
+        <button class="tab-btn" onclick="switchTab('intensive')">Интенсивные</button>
+        <button class="tab-btn" onclick="switchTab('dry-mix')">Сухие смеси</button>
+        <button class="tab-btn" onclick="switchTab('continuous')">Непрерывного действия</button>
+        <button class="tab-btn" onclick="switchTab('asphalt')">Асфальтосмесители</button>
     </div>
 </section>
 
@@ -149,6 +199,7 @@
 <!-- ============================================================ -->
 <!-- ПЛАНЕТАРНЫЕ БЕТОНОСМЕСИТЕЛИ -->
 <!-- ============================================================ -->
+<div class="tab-panel" id="tab-planetary">
 <section id="planetary">
     <h2>Секция 2 — Планетарные бетоносмесители (подробно)</h2>
 
@@ -467,18 +518,20 @@
         <a href="#cta" class="cta">Запросить КП на планетарный смеситель</a>
     </div>
 </section>
+</div><!-- /tab-planetary -->
 
 
 <!-- ============================================================ -->
 <!-- ДВУХВАЛЬНЫЕ БЕТОНОСМЕСИТЕЛИ -->
 <!-- ============================================================ -->
+<div class="tab-panel active" id="tab-twin-shaft">
 <section id="twin-shaft">
     <h2>Секция 3 — Двухвальные бетоносмесители (подробно)</h2>
 
     <div style="display: flex; gap: 30px; flex-wrap: wrap;">
         <div style="flex: 1; min-width: 300px;">
             <h3 style="font-size: 26px;">Двухвальные бетоносмесители</h3>
-            <p><strong>Серии CTS / CHS / CDS — от 750 до 4000 литров</strong></p>
+            <p><strong>Серии CTS / CHS / CDS — от 750 до 6000 литров</strong></p>
 
             <h4 style="margin-top: 16px;">Принцип работы</h4>
             <p>
@@ -523,65 +576,1036 @@
         </div>
     </div>
 
-    <h4 style="margin-top: 24px;">Серия CTS — стандартные двухвальные</h4>
-    <table>
-        <tr>
-            <th>Модель</th>
-            <th>Объём выгрузки, л</th>
-            <th>Объём загрузки, л</th>
-            <th>Мощность, кВт</th>
-        </tr>
-        <tr><td>CTS1000</td><td>1000</td><td>1500</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CTS1250</td><td>1250</td><td>1875</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CTS1500</td><td>1500</td><td>2250</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CTS2000</td><td>2000</td><td>3000</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CTS3000</td><td>3000</td><td>4500</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CTS4000</td><td>4000</td><td>6000</td><td class="note">[уточнить]</td></tr>
-    </table>
-
+    <!-- ===== Серия CHS — тяжёлые двухвальные (в наличии) ===== -->
     <h4 style="margin-top: 24px;">Серия CHS — тяжёлые двухвальные</h4>
-    <table>
-        <tr>
-            <th>Модель</th>
-            <th>Объём выгрузки, л</th>
-            <th>Объём загрузки, л</th>
-            <th>Мощность, кВт</th>
-        </tr>
-        <tr><td>CHS750</td><td>750</td><td>1125</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CHS1000</td><td>1000</td><td>1500</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CHS1250</td><td>1250</td><td>1875</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CHS1500</td><td>1500</td><td>2250</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CHS2000</td><td>2000</td><td>3000</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CHS2500</td><td>2500</td><td>3750</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CHS3000</td><td>3000</td><td>4500</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CHS3500</td><td>3500</td><td>5250</td><td class="note">[уточнить]</td></tr>
-        <tr><td>CHS4000</td><td>4000</td><td>6000</td><td class="note">[уточнить]</td></tr>
-    </table>
+    <p style="margin-bottom: 8px;">Основная линейка для РБУ и крупных производств. Патентованная конструкция смесительного узла, планетарные редукторы военного класса. <strong>Модели в наличии на складе.</strong></p>
 
+    <h5 class="card-group-title">CHS — до 1500 л (один привод)</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CHS750]</div>
+            <div class="card-body">
+                <div class="card-title">CHS750</div>
+                <div class="card-subtitle">Компактный для небольших РБУ</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 750 л<br>
+                    <span>Загрузка:</span> 1 125 л<br>
+                    <span>Мощность:</span> 30 кВт<br>
+                    <span>Масса:</span> 4 500 кг
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CHS1000]</div>
+            <div class="card-body">
+                <div class="card-title">CHS1000</div>
+                <div class="card-subtitle">Для стандартных бетонных заводов</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 1 000 л<br>
+                    <span>Загрузка:</span> 1 500 л<br>
+                    <span>Мощность:</span> 37 кВт<br>
+                    <span>Масса:</span> 5 000 кг<br>
+                    <span>Цена:</span> <strong>2 950 000 ₽</strong>
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CHS1500]</div>
+            <div class="card-body">
+                <div class="card-title">CHS1500</div>
+                <div class="card-subtitle">Популярная модель для РБУ HZS35–50</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 1 500 л<br>
+                    <span>Загрузка:</span> 2 250 л<br>
+                    <span>Мощность:</span> 55 кВт<br>
+                    <span>Масса:</span> 6 000 кг<br>
+                    <span>Цена:</span> <strong>3 693 000 ₽</strong>
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="card-group-title">CHS — от 2000 л (двойной привод)</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CHS2000]</div>
+            <div class="card-body">
+                <div class="card-title">CHS2000</div>
+                <div class="card-subtitle">Для средних и крупных РБУ</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 2 000 л<br>
+                    <span>Загрузка:</span> 3 000 л<br>
+                    <span>Мощность:</span> 2 × 37 кВт<br>
+                    <span>Масса:</span> 8 400 кг<br>
+                    <span>Цена:</span> <strong>4 083 158 ₽</strong>
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CHS3000]</div>
+            <div class="card-body">
+                <div class="card-title">CHS3000</div>
+                <div class="card-subtitle">Для крупных промышленных РБУ</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 3 000 л<br>
+                    <span>Загрузка:</span> 4 500 л<br>
+                    <span>Мощность:</span> 2 × 55 кВт<br>
+                    <span>Масса:</span> 9 500 кг<br>
+                    <span>Цена:</span> <strong>6 513 653 ₽</strong>
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CHS4000]</div>
+            <div class="card-body">
+                <div class="card-title">CHS4000</div>
+                <div class="card-subtitle">Максимальный объём для тяжёлых задач</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 4 000 л<br>
+                    <span>Загрузка:</span> 6 000 л<br>
+                    <span>Мощность:</span> 2 × 75 кВт<br>
+                    <span>Масса:</span> 13 000 кг<br>
+                    <span>Цена:</span> <strong>от 10 316 930 ₽</strong>
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+    <p class="note">Также доступны промежуточные модели: CHS1250 (45 кВт, 5 500 кг), CHS2500 (2×45 кВт, 9 000 кг), CHS3500 (2×65 кВт, 9 500 кг). Модели увеличенного объёма: CHS4500, CHS5000, CHS6000 — до 6 000 л выгрузки, до 2×110 кВт.</p>
+
+    <!-- ===== Серия CTS — стандартные двухвальные ===== -->
+    <h4 style="margin-top: 24px;">Серия CTS — стандартные двухвальные</h4>
+    <p style="margin-bottom: 8px;">Экономичная серия для стандартных задач. Компактная конструкция с верхним расположением двигателя и патентованной системой натяжения ремней.</p>
+
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CTS1000]</div>
+            <div class="card-body">
+                <div class="card-title">CTS1000</div>
+                <div class="card-subtitle">Стандартный для небольших РБУ</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 1 000 л<br>
+                    <span>Загрузка:</span> 1 500 л<br>
+                    <span>Мощность:</span> 37 кВт<br>
+                    <span>Масса:</span> 5 000 кг<br>
+                    <span>Лопасти:</span> 2 × 7 шт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CTS1500]</div>
+            <div class="card-body">
+                <div class="card-title">CTS1500</div>
+                <div class="card-subtitle">Для бетонных заводов HZS35–50</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 1 500 л<br>
+                    <span>Загрузка:</span> 2 250 л<br>
+                    <span>Мощность:</span> 2 × 30 кВт<br>
+                    <span>Масса:</span> 6 000 кг<br>
+                    <span>Лопасти:</span> 2 × 8 шт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CTS2000]</div>
+            <div class="card-body">
+                <div class="card-title">CTS2000</div>
+                <div class="card-subtitle">Для средних РБУ HZS60–90</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 2 000 л<br>
+                    <span>Загрузка:</span> 3 000 л<br>
+                    <span>Мощность:</span> 2 × 37 кВт<br>
+                    <span>Масса:</span> 8 400 кг<br>
+                    <span>Лопасти:</span> 2 × 8 шт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CTS3000]</div>
+            <div class="card-body">
+                <div class="card-title">CTS3000</div>
+                <div class="card-subtitle">Для крупных РБУ HZS120–180</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 3 000 л<br>
+                    <span>Загрузка:</span> 4 500 л<br>
+                    <span>Мощность:</span> 2 × 55 кВт<br>
+                    <span>Масса:</span> 9 500 кг<br>
+                    <span>Лопасти:</span> 2 × 9 шт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CTS4000]</div>
+            <div class="card-body">
+                <div class="card-title">CTS4000</div>
+                <div class="card-subtitle">Максимальный объём серии CTS</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 4 000 л<br>
+                    <span>Загрузка:</span> 6 000 л<br>
+                    <span>Мощность:</span> 2 × 75 кВт<br>
+                    <span>Масса:</span> 13 000 кг<br>
+                    <span>Лопасти:</span> 2 × 11 шт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+    <p class="note">Также доступны: CTS1250 (45 кВт, 5 500 кг) и CTS4500 (2×75 кВт, 14 500 кг).</p>
+
+    <!-- ===== Серия CDS — спиральные двухвальные ===== -->
     <h4 style="margin-top: 24px;">Серия CDS — спиральные двухвальные</h4>
-    <table>
-        <tr>
-            <th>Модель</th>
-            <th>Объём выгрузки, л</th>
-            <th>Особенность</th>
-        </tr>
-        <tr><td>CDS1000</td><td>1000</td><td>Лопасти по спиральной ленте — повышенная эффективность перемещения материала</td></tr>
-    </table>
+    <p style="margin-bottom: 8px;">Спиральная компоновка лопастей — эффективность перемешивания на 15% выше, энергопотребление на 15% ниже. Концепция большого шага снижает сопротивление, скребок полностью покрывает зону смешивания.</p>
 
-    <h4 style="margin-top: 24px;">Лабораторные модели</h4>
-    <table>
-        <tr>
-            <th>Модель</th>
-            <th>Объём, л</th>
-            <th>Назначение</th>
-        </tr>
-        <tr><td>CSS60</td><td>60</td><td>Лабораторные испытания и подбор составов</td></tr>
-    </table>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CDS2000]</div>
+            <div class="card-body">
+                <div class="card-title">CDS2000</div>
+                <div class="card-subtitle">Спиральный для средних объёмов</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 2 000 л<br>
+                    <span>Загрузка:</span> 3 000 л<br>
+                    <span>Мощность:</span> 2 × 37 кВт<br>
+                    <span>Масса:</span> 8 400 кг<br>
+                    <span>Лопасти:</span> 2 × 7 шт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CDS3000]</div>
+            <div class="card-body">
+                <div class="card-title">CDS3000</div>
+                <div class="card-subtitle">Для крупных объёмов с экономией энергии</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 3 000 л<br>
+                    <span>Загрузка:</span> 4 500 л<br>
+                    <span>Мощность:</span> 2 × 55 кВт<br>
+                    <span>Масса:</span> 10 100 кг<br>
+                    <span>Лопасти:</span> 2 × 9 шт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CDS4000]</div>
+            <div class="card-body">
+                <div class="card-title">CDS4000</div>
+                <div class="card-subtitle">Максимальная эффективность для крупных РБУ</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 4 000 л<br>
+                    <span>Загрузка:</span> 6 000 л<br>
+                    <span>Мощность:</span> 2 × 75 кВт<br>
+                    <span>Масса:</span> 13 500 кг<br>
+                    <span>Лопасти:</span> 2 × 10 шт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+    <p class="note">Также доступны: CDS4500 (2×75 кВт), CDS5000 (2×90 кВт), CDS6000 (2×110 кВт) — до 6 000 л выгрузки.</p>
+
+    <!-- ===== Лабораторная модель CSS60 ===== -->
+    <h4 style="margin-top: 24px;">Лабораторная модель</h4>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CSS60]</div>
+            <div class="card-body">
+                <div class="card-title">CSS60</div>
+                <div class="card-subtitle">Лабораторный двухвальный для испытаний и подбора составов</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 60 л<br>
+                    <span>Загрузка:</span> 90 л<br>
+                    <span>Мощность:</span> 5,5 кВт<br>
+                    <span>Масса:</span> 1 000 кг<br>
+                    <span>Габариты:</span> 1200 × 800 × 1000 мм<br>
+                    <span>Макс. фракция:</span> ≤ 65 мм<br>
+                    <span>Питание:</span> 220 В / 380 В
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="note" style="margin-top: 16px;">* Двойной привод (2×) — два независимых двигателя на каждый вал. Все модели оснащены планетарными редукторами, системой автоматической смазки, хромированными лопастями. Гарантия 24 месяца.</p>
 
     <div style="text-align: center; margin-top: 16px;">
         <a href="#cta" class="cta">Запросить КП на двухвальный смеситель</a>
     </div>
 </section>
+</div><!-- /tab-twin-shaft -->
+
+
+<!-- ============================================================ -->
+<!-- ИНТЕНСИВНЫЕ СМЕСИТЕЛИ -->
+<!-- ============================================================ -->
+<div class="tab-panel" id="tab-intensive">
+<section id="intensive">
+    <h2>Секция — Интенсивные смесители (CR / CQM)</h2>
+
+    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <h3 style="font-size: 26px;">Интенсивные смесители</h3>
+            <p><strong>Серия CR / CQM — от 5 до 3000 литров</strong></p>
+
+            <h4 style="margin-top: 16px;">Принцип работы</h4>
+            <p>
+                Противоточный принцип смешивания: ротор вращается навстречу вращающейся чаше.
+                Каждая частица материала многократно проходит через зону интенсивного воздействия,
+                что обеспечивает максимально однородную смесь за минимальное время.
+            </p>
+
+            <h4 style="margin-top: 16px;">Ключевые преимущества</h4>
+            <ul>
+                <li>Противоточное смешивание — максимальная эффективность</li>
+                <li>Низкое энергопотребление относительно объёма</li>
+                <li>Совмещение смешивания, грануляции и покрытия</li>
+                <li>Объёмы от лабораторных (5 л) до промышленных (3 000 л)</li>
+                <li>Модели с наклонной выгрузкой и донным выпуском</li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+            <p class="note">[Фото интенсивного смесителя CR — общий вид]</p>
+            <p class="note" style="margin-top: 12px;">[Схема противоточного принципа смешивания]</p>
+        </div>
+    </div>
+
+    <h4 style="margin-top: 24px;">Области применения</h4>
+    <div class="grid" style="margin-top: 8px;">
+        <div class="block">
+            <h4>Огнеупорные материалы</h4>
+            <p>Смеси для футеровки печей, ковшей, промышленного оборудования.</p>
+        </div>
+        <div class="block">
+            <h4>Литейное производство</h4>
+            <p>Подготовка формовочных и стержневых смесей для литья металлов.</p>
+        </div>
+        <div class="block">
+            <h4>Грануляция и пеллетизация</h4>
+            <p>Производство гранул из порошковых материалов, удобрений, химических составов.</p>
+        </div>
+        <div class="block">
+            <h4>Стекольная промышленность</h4>
+            <p>Смешивание компонентов шихты с высокой точностью дозирования.</p>
+        </div>
+    </div>
+
+    <h4 style="margin-top: 24px;">Модельный ряд интенсивных смесителей</h4>
+    <p style="margin-bottom: 8px;">Серия CQM — модели от 5 до 3000 литров. <a href="#cta">Запросите подбор у инженера</a>.</p>
+
+    <h5 class="card-group-title">Лабораторные модели</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CQM15]</div>
+            <div class="card-body">
+                <div class="card-title">CQM15</div>
+                <div class="card-subtitle">Лабораторный интенсивный смеситель</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 15 л<br>
+                    <span>Загрузка:</span> 25 л<br>
+                    <span>Масса замеса:</span> 18 кг<br>
+                    <span>Габариты:</span> 900 × 700 × 980 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CQM50]</div>
+            <div class="card-body">
+                <div class="card-title">CQM50</div>
+                <div class="card-subtitle">Для лабораторий и опытных линий</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 50 л<br>
+                    <span>Загрузка:</span> 75 л<br>
+                    <span>Масса замеса:</span> 60 кг<br>
+                    <span>Габариты:</span> 2150 × 1500 × 2250 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="card-group-title">Малые и средние производства</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CQM100]</div>
+            <div class="card-body">
+                <div class="card-title">CQM100</div>
+                <div class="card-subtitle">Для малых производств</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 100 л<br>
+                    <span>Загрузка:</span> 150 л<br>
+                    <span>Масса замеса:</span> 120 кг<br>
+                    <span>Роторов:</span> 1
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CQM250]</div>
+            <div class="card-body">
+                <div class="card-title">CQM250</div>
+                <div class="card-subtitle">Для средних производств</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 250 л<br>
+                    <span>Загрузка:</span> 375 л<br>
+                    <span>Масса замеса:</span> 300 кг<br>
+                    <span>Роторов:</span> 1
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CQM500]</div>
+            <div class="card-body">
+                <div class="card-title">CQM500</div>
+                <div class="card-subtitle">Универсальный для средних предприятий</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 500 л<br>
+                    <span>Загрузка:</span> 750 л<br>
+                    <span>Масса замеса:</span> 600 кг<br>
+                    <span>Габариты:</span> 2800 × 1850 × 2750 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="card-group-title">Крупные производства</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CQM750]</div>
+            <div class="card-body">
+                <div class="card-title">CQM750</div>
+                <div class="card-subtitle">Для серийного производства</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 750 л<br>
+                    <span>Загрузка:</span> 1 125 л<br>
+                    <span>Масса замеса:</span> 900 кг<br>
+                    <span>Габариты:</span> 2950 × 2100 × 2850 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CQM1000]</div>
+            <div class="card-body">
+                <div class="card-title">CQM1000</div>
+                <div class="card-subtitle">Для крупных заводов</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 1 000 л<br>
+                    <span>Загрузка:</span> 1 500 л<br>
+                    <span>Масса замеса:</span> 1 200 кг<br>
+                    <span>Габариты:</span> 3210 × 2520 × 2520 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CQM1500]</div>
+            <div class="card-body">
+                <div class="card-title">CQM1500</div>
+                <div class="card-subtitle">Промышленный интенсивный смеситель</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 1 500 л<br>
+                    <span>Загрузка:</span> 2 250 л<br>
+                    <span>Масса замеса:</span> 1 800 кг<br>
+                    <span>Габариты:</span> 4700 × 2650 × 2600 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="card-group-title">Промышленные линии (планетарный привод)</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CQM1500P]</div>
+            <div class="card-body">
+                <div class="card-title">CQM1500P</div>
+                <div class="card-subtitle">2 ротора, планетарный привод</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 1 500 л<br>
+                    <span>Загрузка:</span> 1 800 л<br>
+                    <span>Масса замеса:</span> 1 800 кг<br>
+                    <span>Роторов:</span> 2<br>
+                    <span>Габариты:</span> 4900 × 2850 × 2650 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CQM2000P]</div>
+            <div class="card-body">
+                <div class="card-title">CQM2000P</div>
+                <div class="card-subtitle">2 ротора, для крупнотоннажного производства</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 2 000 л<br>
+                    <span>Загрузка:</span> 2 400 л<br>
+                    <span>Масса замеса:</span> 2 400 кг<br>
+                    <span>Роторов:</span> 2<br>
+                    <span>Габариты:</span> 5300 × 3250 × 2650 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CQM3000P]</div>
+            <div class="card-body">
+                <div class="card-title">CQM3000P</div>
+                <div class="card-subtitle">Флагман серии — максимальный объём</div>
+                <div class="card-specs">
+                    <span>Выгрузка:</span> 3 000 л<br>
+                    <span>Загрузка:</span> 3 600 л<br>
+                    <span>Масса замеса:</span> 3 600 кг<br>
+                    <span>Роторов:</span> 2
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="note" style="margin-top: 16px;">* Также доступны промежуточные модели: CQM150 (150 л), CQM330 (330 л). Модели с суффиксом «P» оснащены двумя роторами для повышенной интенсивности смешивания. Гарантия 24 месяца.</p>
+
+    <div style="text-align: center; margin-top: 16px;">
+        <a href="#cta" class="cta">Запросить КП на интенсивный смеситель</a>
+    </div>
+</section>
+</div><!-- /tab-intensive -->
+
+
+<!-- ============================================================ -->
+<!-- СМЕСИТЕЛИ СУХИХ СМЕСЕЙ -->
+<!-- ============================================================ -->
+<div class="tab-panel" id="tab-dry-mix">
+<section id="dry-mix">
+    <h2>Секция — Смесители сухих смесей (CDW / CSW)</h2>
+
+    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <h3 style="font-size: 26px;">Смесители сухих смесей</h3>
+            <p><strong>Серии CDW (одновальные) и CSW (двухвальные) — от 100 до 15 000 литров</strong></p>
+
+            <h4 style="margin-top: 16px;">Принцип работы</h4>
+            <p>
+                Горизонтальные валы с лопастями и высокоскоростные ножи (flying knife) обеспечивают
+                быстрое и равномерное перемешивание сухих компонентов. Серия CDW — одновальная для малых
+                и средних объёмов, CSW — двухвальная для крупных производств.
+            </p>
+
+            <h4 style="margin-top: 16px;">Ключевые преимущества</h4>
+            <ul>
+                <li>Энергопотребление на 60% ниже традиционных ленточных смесителей</li>
+                <li>Высокоскоростной нож для диспергирования волокон</li>
+                <li>Патентованная система двойной выгрузки</li>
+                <li>Пневматический отбор проб без остановки</li>
+                <li>Время замеса 3–5 минут</li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+            <p class="note">[Фото смесителя сухих смесей CDW — общий вид]</p>
+            <p class="note" style="margin-top: 12px;">[Схема одновальной и двухвальной компоновки]</p>
+        </div>
+    </div>
+
+    <h4 style="margin-top: 24px;">Области применения</h4>
+    <div class="grid" style="margin-top: 8px;">
+        <div class="block">
+            <h4>Сухие строительные смеси</h4>
+            <p>Штукатурки, клеевые составы, наливные полы, затирки, ремонтные смеси.</p>
+        </div>
+        <div class="block">
+            <h4>Сухие растворы</h4>
+            <p>Кладочные и штукатурные растворы для крупных строительных объектов.</p>
+        </div>
+        <div class="block">
+            <h4>Теплоизоляционные смеси</h4>
+            <p>Составы на основе перлита, вермикулита и полистирола.</p>
+        </div>
+        <div class="block">
+            <h4>Химическая продукция</h4>
+            <p>Порошковые составы, удобрения, кормовые добавки.</p>
+        </div>
+    </div>
+
+    <h4 style="margin-top: 24px;">Серия CDW — одновальные</h4>
+    <p style="margin-bottom: 8px;">Для малых и средних производств. Один горизонтальный вал с лопастями + высокоскоростные ножи.</p>
+
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CDW100]</div>
+            <div class="card-body">
+                <div class="card-title">CDW100</div>
+                <div class="card-subtitle">Лабораторный для подбора составов</div>
+                <div class="card-specs">
+                    <span>Общий объём:</span> 100 л<br>
+                    <span>Рабочий объём:</span> 40–60 л<br>
+                    <span>Мощность:</span> 3 кВт<br>
+                    <span>Масса замеса:</span> 60–90 кг
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CDW1200]</div>
+            <div class="card-body">
+                <div class="card-title">CDW1200</div>
+                <div class="card-subtitle">Для малых производств</div>
+                <div class="card-specs">
+                    <span>Общий объём:</span> 1 200 л<br>
+                    <span>Рабочий объём:</span> 480–720 л<br>
+                    <span>Мощность:</span> 22 кВт<br>
+                    <span>Ножи:</span> 2 × 4 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CDW2000]</div>
+            <div class="card-body">
+                <div class="card-title">CDW2000</div>
+                <div class="card-subtitle">Для средних производств</div>
+                <div class="card-specs">
+                    <span>Общий объём:</span> 2 000 л<br>
+                    <span>Рабочий объём:</span> 800–1 200 л<br>
+                    <span>Мощность:</span> 37 кВт<br>
+                    <span>Ножи:</span> 2 × 4 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CDW3000]</div>
+            <div class="card-body">
+                <div class="card-title">CDW3000</div>
+                <div class="card-subtitle">Максимальный одновальный</div>
+                <div class="card-specs">
+                    <span>Общий объём:</span> 3 000 л<br>
+                    <span>Рабочий объём:</span> 1 200–1 800 л<br>
+                    <span>Мощность:</span> 55 кВт<br>
+                    <span>Ножи:</span> 3 × 4 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <h4 style="margin-top: 24px;">Серия CSW — двухвальные</h4>
+    <p style="margin-bottom: 8px;">Для средних и крупных производств. Два горизонтальных вала + высокоскоростные ножи. Производительность до 60 т/ч.</p>
+
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CSW4000]</div>
+            <div class="card-body">
+                <div class="card-title">CSW4000</div>
+                <div class="card-subtitle">Двухвальный для средних объёмов</div>
+                <div class="card-specs">
+                    <span>Общий объём:</span> 4 000 л<br>
+                    <span>Рабочий объём:</span> 1 600–2 400 л<br>
+                    <span>Мощность:</span> 2 × 30 кВт<br>
+                    <span>Ножи:</span> 4 × 4 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CSW6000]</div>
+            <div class="card-body">
+                <div class="card-title">CSW6000</div>
+                <div class="card-subtitle">Для крупных производств</div>
+                <div class="card-specs">
+                    <span>Общий объём:</span> 6 000 л<br>
+                    <span>Рабочий объём:</span> 2 400–3 600 л<br>
+                    <span>Мощность:</span> 2 × 37 кВт<br>
+                    <span>Ножи:</span> 6 × 4 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CSW8000]</div>
+            <div class="card-body">
+                <div class="card-title">CSW8000</div>
+                <div class="card-subtitle">Промышленный двухвальный</div>
+                <div class="card-specs">
+                    <span>Общий объём:</span> 8 000 л<br>
+                    <span>Рабочий объём:</span> 3 200–4 800 л<br>
+                    <span>Мощность:</span> 2 × 55 кВт<br>
+                    <span>Ножи:</span> 6 × 4 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CSW10000]</div>
+            <div class="card-body">
+                <div class="card-title">CSW10000</div>
+                <div class="card-subtitle">Для масштабного производства</div>
+                <div class="card-specs">
+                    <span>Общий объём:</span> 10 000 л<br>
+                    <span>Рабочий объём:</span> 4 000–6 000 л<br>
+                    <span>Мощность:</span> 2 × 65 кВт<br>
+                    <span>Ножи:</span> 6 × 4 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="note" style="margin-top: 16px;">* Также доступны: CSW2000 (2×11 кВт), CSW3000 (2×15 кВт), CSW12000 (2×55 кВт), CSW15000 (2×75 кВт). Гарантия 24 месяца.</p>
+
+    <div style="text-align: center; margin-top: 16px;">
+        <a href="#cta" class="cta">Запросить КП на смеситель сухих смесей</a>
+    </div>
+</section>
+</div><!-- /tab-dry-mix -->
+
+
+<!-- ============================================================ -->
+<!-- СМЕСИТЕЛИ НЕПРЕРЫВНОГО ДЕЙСТВИЯ -->
+<!-- ============================================================ -->
+<div class="tab-panel" id="tab-continuous">
+<section id="continuous">
+    <h2>Секция — Смесители непрерывного действия (CR-L / CD-L)</h2>
+
+    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <h3 style="font-size: 26px;">Смесители непрерывного действия</h3>
+            <p><strong>Серия CR-L / CD-L — производительность от 20 до 1 400 т/ч</strong></p>
+
+            <h4 style="margin-top: 16px;">Принцип работы</h4>
+            <p>
+                Непрерывная подача и выгрузка материала одновременно. Основан на платформе
+                интенсивного смесителя CR с модификацией для потокового режима работы.
+                Ротор с переменной скоростью обеспечивает контролируемую интенсивность смешивания.
+            </p>
+
+            <h4 style="margin-top: 16px;">Ключевые преимущества</h4>
+            <ul>
+                <li>Непрерывный режим работы 24/7</li>
+                <li>Производительность до 1 400 т/ч</li>
+                <li>Совмещение смешивания, грануляции и покрытия</li>
+                <li>Самовращающийся затвор выгрузки</li>
+                <li>Износостойкие сплавы для абразивных материалов</li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+            <p class="note">[Фото смесителя непрерывного действия CR-L — общий вид]</p>
+            <p class="note" style="margin-top: 12px;">[Схема потокового процесса смешивания]</p>
+        </div>
+    </div>
+
+    <h4 style="margin-top: 24px;">Области применения</h4>
+    <div class="grid" style="margin-top: 8px;">
+        <div class="block">
+            <h4>Металлургия</h4>
+            <p>Агломерация и пеллетизация руды, подготовка шихты.</p>
+        </div>
+        <div class="block">
+            <h4>Переработка отходов</h4>
+            <p>Стабилизация золы-уноса, рекультивация почв, обработка хвостов.</p>
+        </div>
+        <div class="block">
+            <h4>Строительные материалы</h4>
+            <p>Сухие смеси, теплоизоляционные составы непрерывным способом.</p>
+        </div>
+        <div class="block">
+            <h4>Химическая промышленность</h4>
+            <p>Смешивание порошков, жидкостей, удобрений в потоковом режиме.</p>
+        </div>
+    </div>
+
+    <h4 style="margin-top: 24px;">Модельный ряд смесителей непрерывного действия</h4>
+    <p style="margin-bottom: 8px;">Серии CR-L и CD-L — 7 моделей производительностью от 20 до 1 400 т/ч.</p>
+
+    <h5 class="card-group-title">Средняя производительность (20–200 т/ч)</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CR15L]</div>
+            <div class="card-body">
+                <div class="card-title">CR15L</div>
+                <div class="card-subtitle">Компактный непрерывный</div>
+                <div class="card-specs">
+                    <span>Объём:</span> 500–1 000 л<br>
+                    <span>Производительность:</span> 20–70 т/ч<br>
+                    <span>Мощность ротора:</span> 55 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CR19L]</div>
+            <div class="card-body">
+                <div class="card-title">CR19L</div>
+                <div class="card-subtitle">Для средних производств</div>
+                <div class="card-specs">
+                    <span>Объём:</span> 1 000–1 500 л<br>
+                    <span>Производительность:</span> 30–100 т/ч<br>
+                    <span>Мощность ротора:</span> 75 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CR20L]</div>
+            <div class="card-body">
+                <div class="card-title">CR20L</div>
+                <div class="card-subtitle">Универсальный непрерывный</div>
+                <div class="card-specs">
+                    <span>Объём:</span> 1 500–2 000 л<br>
+                    <span>Производительность:</span> 40–130 т/ч<br>
+                    <span>Мощность ротора:</span> 90 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CR24L]</div>
+            <div class="card-body">
+                <div class="card-title">CR24L</div>
+                <div class="card-subtitle">Для крупных предприятий</div>
+                <div class="card-specs">
+                    <span>Объём:</span> 2 000–3 000 л<br>
+                    <span>Производительность:</span> 50–200 т/ч<br>
+                    <span>Мощность ротора:</span> 110 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="card-group-title">Высокая производительность (150–1 400 т/ч)</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото CD29L]</div>
+            <div class="card-body">
+                <div class="card-title">CD29L</div>
+                <div class="card-subtitle">Двухроторный для крупных объёмов</div>
+                <div class="card-specs">
+                    <span>Объём:</span> 4 000–6 000 л<br>
+                    <span>Производительность:</span> 150–450 т/ч<br>
+                    <span>Мощность:</span> 110 + 132 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CD33L]</div>
+            <div class="card-body">
+                <div class="card-title">CD33L</div>
+                <div class="card-subtitle">Промышленный высокой мощности</div>
+                <div class="card-specs">
+                    <span>Объём:</span> 6 000–7 000 л<br>
+                    <span>Производительность:</span> 200–600 т/ч<br>
+                    <span>Мощность:</span> 160 + 200 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото CD40L]</div>
+            <div class="card-body">
+                <div class="card-title">CD40L</div>
+                <div class="card-subtitle">Флагман — до 1 400 т/ч</div>
+                <div class="card-specs">
+                    <span>Объём:</span> 10 000–12 000 л<br>
+                    <span>Производительность:</span> 1 000–1 400 т/ч<br>
+                    <span>Мощность:</span> 2×160 + 2×200 кВт
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="note" style="margin-top: 16px;">* Все модели оснащены износостойкими сплавами с защитным покрытием для работы с абразивными и коррозионно-активными материалами. Гарантия 24 месяца.</p>
+
+    <div style="text-align: center; margin-top: 16px;">
+        <a href="#cta" class="cta">Запросить КП на смеситель непрерывного действия</a>
+    </div>
+</section>
+</div><!-- /tab-continuous -->
+
+
+<!-- ============================================================ -->
+<!-- АСФАЛЬТОСМЕСИТЕЛИ -->
+<!-- ============================================================ -->
+<div class="tab-panel" id="tab-asphalt">
+<section id="asphalt">
+    <h2>Секция — Асфальтосмесители (AMS)</h2>
+
+    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <h3 style="font-size: 26px;">Асфальтосмесители</h3>
+            <p><strong>Серия AMS — от 1 000 до 4 000 кг/цикл</strong></p>
+
+            <h4 style="margin-top: 16px;">Принцип работы</h4>
+            <p>
+                Двухвальный асфальтосмеситель циклического действия. Два вала с лопастями вращаются
+                навстречу друг другу, обеспечивая равномерное смешивание горячего щебня с битумом.
+                Откидная дверь выгрузки с цилиндром — быстрый сброс без мёртвых зон.
+            </p>
+
+            <h4 style="margin-top: 16px;">Ключевые преимущества</h4>
+            <ul>
+                <li>Рабочая температура 145–165°C</li>
+                <li>Откидная дверь выгрузки с подогревом и теплоизоляцией</li>
+                <li>Лопасти и футеровка из высокохромистого износостойкого сплава</li>
+                <li>Термостойкое уплотнение валов с автоматической смазкой</li>
+                <li>Разъёмный корпус (верх/низ) для простоты обслуживания</li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+            <p class="note">[Фото асфальтосмесителя AMS — общий вид]</p>
+            <p class="note" style="margin-top: 12px;">[Схема двухвального асфальтосмесителя]</p>
+        </div>
+    </div>
+
+    <h4 style="margin-top: 24px;">Области применения</h4>
+    <div class="grid" style="margin-top: 8px;">
+        <div class="block">
+            <h4>Горячие асфальтобетонные смеси</h4>
+            <p>Стандартные горячие смеси для дорожного строительства и ремонта.</p>
+        </div>
+        <div class="block">
+            <h4>Тёплые смеси</h4>
+            <p>Асфальтобетонные смеси при пониженных температурах для экономии энергии.</p>
+        </div>
+        <div class="block">
+            <h4>Рециклированный асфальт</h4>
+            <p>Переработка старого асфальтового покрытия с добавлением нового битума.</p>
+        </div>
+    </div>
+
+    <h4 style="margin-top: 24px;">Модельный ряд асфальтосмесителей</h4>
+    <p style="margin-bottom: 8px;">Серия AMS — 7 моделей от 1 000 до 4 000 кг/цикл.</p>
+
+    <h5 class="card-group-title">Компактные модели (до 1 500 кг/цикл)</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото AMS1000]</div>
+            <div class="card-body">
+                <div class="card-title">AMS1000</div>
+                <div class="card-subtitle">Компактный для небольших АБЗ</div>
+                <div class="card-specs">
+                    <span>Замес:</span> 1 000 кг/цикл<br>
+                    <span>Мощность:</span> 2 × 15 кВт<br>
+                    <span>Скорость валов:</span> 53 об/мин<br>
+                    <span>Масса:</span> 3 000 кг<br>
+                    <span>Габариты:</span> 2750 × 1750 × 1727 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото AMS1200]</div>
+            <div class="card-body">
+                <div class="card-title">AMS1200</div>
+                <div class="card-subtitle">Для малых асфальтных заводов</div>
+                <div class="card-specs">
+                    <span>Замес:</span> 1 200 кг/цикл<br>
+                    <span>Мощность:</span> 2 × 18,5 кВт<br>
+                    <span>Скорость валов:</span> 54 об/мин<br>
+                    <span>Масса:</span> 3 800 кг<br>
+                    <span>Габариты:</span> 2900 × 1750 × 1727 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото AMS1500]</div>
+            <div class="card-body">
+                <div class="card-title">AMS1500</div>
+                <div class="card-subtitle">Популярная модель для АБЗ</div>
+                <div class="card-specs">
+                    <span>Замес:</span> 1 500 кг/цикл<br>
+                    <span>Мощность:</span> 2 × 22 кВт<br>
+                    <span>Скорость валов:</span> 55 об/мин<br>
+                    <span>Масса:</span> 4 100 кг<br>
+                    <span>Габариты:</span> 3100 × 1750 × 1727 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="card-group-title">Промышленные модели (2 000–4 000 кг/цикл)</h5>
+    <div class="grid">
+        <div class="product-card">
+            <div class="card-img">[Фото AMS2000]</div>
+            <div class="card-body">
+                <div class="card-title">AMS2000</div>
+                <div class="card-subtitle">Для средних и крупных АБЗ</div>
+                <div class="card-specs">
+                    <span>Замес:</span> 2 000 кг/цикл<br>
+                    <span>Мощность:</span> 2 × 30 кВт<br>
+                    <span>Скорость валов:</span> 45 об/мин<br>
+                    <span>Масса:</span> 6 800 кг<br>
+                    <span>Габариты:</span> 3680 × 2200 × 1973 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото AMS2500]</div>
+            <div class="card-body">
+                <div class="card-title">AMS2500</div>
+                <div class="card-subtitle">Для крупных асфальтных заводов</div>
+                <div class="card-specs">
+                    <span>Замес:</span> 2 500 кг/цикл<br>
+                    <span>Мощность:</span> 2 × 37 кВт<br>
+                    <span>Скорость валов:</span> 45 об/мин<br>
+                    <span>Масса:</span> 7 500 кг<br>
+                    <span>Габариты:</span> 3680 × 2200 × 1973 мм
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото AMS3000]</div>
+            <div class="card-body">
+                <div class="card-title">AMS3000</div>
+                <div class="card-subtitle">Промышленный для крупных АБЗ</div>
+                <div class="card-specs">
+                    <span>Замес:</span> 3 000 кг/цикл<br>
+                    <span>Мощность:</span> 2 × 45 кВт<br>
+                    <span>Скорость валов:</span> 45 об/мин<br>
+                    <span>Масса:</span> 8 200 кг
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="card-img">[Фото AMS4000]</div>
+            <div class="card-body">
+                <div class="card-title">AMS4000</div>
+                <div class="card-subtitle">Максимальный объём серии AMS</div>
+                <div class="card-specs">
+                    <span>Замес:</span> 4 000 кг/цикл<br>
+                    <span>Мощность:</span> 2 × 55 кВт<br>
+                    <span>Скорость валов:</span> 45 об/мин<br>
+                    <span>Масса:</span> 9 500 кг
+                </div>
+                <a href="#cta" class="card-cta">Запросить КП</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="note" style="margin-top: 16px;">* Рабочая температура 145–165°C. Футеровка: боковая — чугун Ni-Hard 12 мм (&gt;653 HB), нижняя — 15 мм. Редуктор TONGJIA с винтовой зубчатой передачей. Также доступна улучшенная серия AMH с звёздчатым редуктором. Гарантия 24 месяца.</p>
+
+    <div style="text-align: center; margin-top: 16px;">
+        <a href="#cta" class="cta">Запросить КП на асфальтосмеситель</a>
+    </div>
+</section>
+</div><!-- /tab-asphalt -->
 
 
 <!-- ============================================================ -->
@@ -606,7 +1630,7 @@
         <tr>
             <td><strong>Объём</strong></td>
             <td>50 – 4 500 л</td>
-            <td>750 – 4 000 л</td>
+            <td>750 – 6 000 л</td>
         </tr>
         <tr>
             <td><strong>Производительность</strong></td>
@@ -681,7 +1705,7 @@
         <p>[Поле: Имя]</p>
         <p>[Поле: Телефон]</p>
         <p>[Поле: Email]</p>
-        <p>[Поле: Тип смесителя — Планетарный / Двухвальный / Не определился]</p>
+        <p>[Поле: Тип смесителя — Двухвальный / Планетарный / Интенсивный / Сухих смесей / Непрерывного действия / Асфальтосмеситель / Не определился]</p>
         <p>[Поле: Объём / Производительность]</p>
         <p>[Поле: Для чего будет использоваться]</p>
         <p style="text-align: center;"><span class="cta">Получить КП</span></p>
@@ -726,6 +1750,24 @@
     <hr>
     <p style="text-align: center;" class="note">© 2024 CO-NELE Russia. Все права защищены.</p>
 </section>
+
+<script>
+function switchTab(tabName) {
+    document.querySelectorAll('.tab-panel').forEach(function(panel) {
+        panel.classList.remove('active');
+    });
+    document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+    document.getElementById('tab-' + tabName).classList.add('active');
+    document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        if (btn.getAttribute('onclick').indexOf(tabName) !== -1) {
+            btn.classList.add('active');
+        }
+    });
+    document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
 
 </body>
 </html>
